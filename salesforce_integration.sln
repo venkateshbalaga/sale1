@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{325B8569-0C7C-4A6A-8AF8-89C3B6BC9E74}") = "salesforce_integration", "salesforce_integration.stproj", "{31A7BFCC-B156-4CD5-9E17-BACA3FC2410E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31A7BFCC-B156-4CD5-9E17-BACA3FC2410E}.Debug|AnyCPU.ActiveCfg = Debug|Rails1
+		{31A7BFCC-B156-4CD5-9E17-BACA3FC2410E}.Debug|AnyCPU.Build.0 = Debug|Rails1
+		{31A7BFCC-B156-4CD5-9E17-BACA3FC2410E}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{31A7BFCC-B156-4CD5-9E17-BACA3FC2410E}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

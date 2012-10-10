@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  casenumber: MyString
+  status: MyString
+  type: MyString
+  case_orgin: MyString
+
+two:
+  casenumber: MyString
+  status: MyString
+  type: MyString
+  case_orgin: MyString

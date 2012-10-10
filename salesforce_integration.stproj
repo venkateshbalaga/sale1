@@ -1,0 +1,143 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31a7bfcc-b156-4cd5-9e17-baca3fc2410e}</ProjectGuid>
+    <RailsProject>True</RailsProject>
+    <RailsActionView>
+      <Include>ActionView::Helpers::ActiveRecordHelper</Include>
+      <Include>ActionView::Helpers::AssetTagHelper</Include>
+      <Include>ActionView::Helpers::DateHelper</Include>
+      <Include>ActionView::Helpers::FormHelper</Include>
+      <Include>ActionView::Helpers::FormOptionsHelper</Include>
+      <Include>ActionView::Helpers::FormTagHelper</Include>
+      <Include>ActionView::Helpers::JavaScriptHelper</Include>
+      <Include>ActionView::Helpers::NumberHelper</Include>
+      <Include>ActionView::Helpers::PaginationHelper</Include>
+      <Include>ActionView::Helpers::TagHelper</Include>
+      <Include>ActionView::Helpers::UrlHelper</Include>
+    </RailsActionView>
+    <RailsDebugScript>C:\ProgramData\SapphireSteel Software\Ruby In Steel 2010\Scripts\webrick_service.rb</RailsDebugScript>
+    <RubyInterpreter>C:\cygwin\bin\ruby.exe</RubyInterpreter>
+    <RubyType>Ruby 1.8.7</RubyType>
+    <ServerPort>3000</ServerPort>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Rails1' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Rails1' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="app\controllers\application_controller.rb" />
+    <Content Include="app\controllers\cases_controller.rb" />
+    <Content Include="app\helpers\application_helper.rb" />
+    <Content Include="app\helpers\cases_helper.rb" />
+    <Content Include="app\models\case.rb" />
+    <Content Include="app\views\cases\edit.html.erb" />
+    <Content Include="app\views\cases\index.html.erb" />
+    <Content Include="app\views\cases\new.html.erb" />
+    <Content Include="app\views\cases\show.html.erb" />
+    <Content Include="app\views\layouts\cases.html.erb" />
+    <Content Include="config\boot.rb" />
+    <Content Include="config\database.yml" />
+    <Content Include="config\environment.rb" />
+    <Content Include="config\environments\development.rb" />
+    <Content Include="config\environments\production.rb" />
+    <Content Include="config\environments\test.rb" />
+    <Content Include="config\initializers\backtrace_silencers.rb" />
+    <Content Include="config\initializers\cookie_verification_secret.rb" />
+    <Content Include="config\initializers\inflections.rb" />
+    <Content Include="config\initializers\mime_types.rb" />
+    <Content Include="config\initializers\new_rails_defaults.rb" />
+    <Content Include="config\initializers\session_store.rb" />
+    <Content Include="config\locales\en.yml" />
+    <Content Include="config\routes.rb" />
+    <Content Include="db\migrate\20120627060915_create_cases.rb" />
+    <Content Include="db\schema.rb" />
+    <Content Include="db\seeds.rb" />
+    <Content Include="doc\README_FOR_APP" />
+    <Content Include="public\404.html" />
+    <Content Include="public\422.html" />
+    <Content Include="public\500.html" />
+    <Content Include="public\favicon.ico" />
+    <Content Include="public\images\rails.png" />
+    <Content Include="public\javascripts\application.js" />
+    <Content Include="public\javascripts\controls.js" />
+    <Content Include="public\javascripts\dragdrop.js" />
+    <Content Include="public\javascripts\effects.js" />
+    <Content Include="public\javascripts\prototype.js" />
+    <Content Include="public\robots.txt" />
+    <Content Include="public\stylesheets\scaffold.css" />
+    <Content Include="Rakefile" />
+    <Content Include="README" />
+    <Content Include="script\about" />
+    <Content Include="script\console" />
+    <Content Include="script\dbconsole" />
+    <Content Include="script\destroy" />
+    <Content Include="script\generate" />
+    <Content Include="script\performance\benchmarker" />
+    <Content Include="script\performance\profiler" />
+    <Content Include="script\plugin" />
+    <Content Include="script\runner" />
+    <Content Include="script\server" />
+    <Content Include="test\fixtures\cases.yml" />
+    <Content Include="test\functional\cases_controller_test.rb" />
+    <Content Include="test\performance\browsing_test.rb" />
+    <Content Include="test\test_helper.rb" />
+    <Content Include="test\unit\case_test.rb" />
+    <Content Include="test\unit\helpers\cases_helper_test.rb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\controllers\" />
+    <Folder Include="app\helpers\" />
+    <Folder Include="app\models\" />
+    <Folder Include="app\views\" />
+    <Folder Include="app\views\cases\" />
+    <Folder Include="app\views\layouts\" />
+    <Folder Include="config\" />
+    <Folder Include="config\environments\" />
+    <Folder Include="config\initializers\" />
+    <Folder Include="config\locales\" />
+    <Folder Include="db\" />
+    <Folder Include="db\migrate\" />
+    <Folder Include="doc\" />
+    <Folder Include="lib\" />
+    <Folder Include="lib\tasks\" />
+    <Folder Include="log\" />
+    <Folder Include="public\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="script\" />
+    <Folder Include="script\performance\" />
+    <Folder Include="test\" />
+    <Folder Include="test\fixtures\" />
+    <Folder Include="test\functional\" />
+    <Folder Include="test\integration\" />
+    <Folder Include="test\performance\" />
+    <Folder Include="test\unit\" />
+    <Folder Include="test\unit\helpers\" />
+    <Folder Include="tmp\" />
+    <Folder Include="tmp\cache\" />
+    <Folder Include="tmp\pids\" />
+    <Folder Include="tmp\sessions\" />
+    <Folder Include="tmp\sockets\" />
+    <Folder Include="vendor\" />
+    <Folder Include="vendor\plugins\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SapphireSteel Software\Ruby In Steel 2010\RubyInSteel.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

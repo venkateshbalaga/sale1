@@ -1,0 +1,55 @@
+
+
+<% form_for(@case) do |f| %>
+  <%= f.error_messages %>
+		<table align="center">
+			<tr>
+
+				<td>
+					Case Number:
+				</td>
+				<td>
+			
+					<% unless @case_no.nil? %>
+							<%= f.text_field :casenumber, :id => "casenumber", :value=> @case_no.casenumber.next, :readonly => "true", :style=>"width:155px;" %>
+						<% else %>
+								<%= f.text_field :casenumber, :id => "casenumber",  :value=>"0001", :readonly => "true", :style=>"width:155px;" %>
+						<% end %>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Status:
+				</td>
+				<td>
+					<%= f.select :status, [['New'],['Working'],['Escalated']],{:prompt =>true},{ :id => "status", :style=>"width:158px;"} %>
+				</td>
+			</tr>	
+			<tr>
+				<td>
+					Type:
+				</td>
+				<td>
+					<%= f.select :type1, [['Mechanical'],['Electrical'],['Electronic'],['Structural'],['Other']],{:prompt =>true},{ :id => "type", :style=>"width:158px;"} %>
+				</td>
+			</tr>
+			<tr>
+				  <td>
+						Case Origin:
+					</td>
+					<td>
+						<%= f.select :case_orgin, [['-------------None------------'],['Phone'],['Email'],['Web']],{ :prompt=>false},{ :id => "type", :style=>"width:158px;"} %>
+					</td>
+			</tr>
+	  </table>
+		<table align="center">
+			<tr>
+				
+					<td>
+						<%= f.submit 'Create', :onclick => "this.disabled=true;this.value='Process..';this.form.submit();" %>
+						<%= f.submit 'Reset', :type => "reset" %>
+						<a href="/cases"><input type="button" value="Back"></a>
+					</td>
+			</tr>
+		</table>
+<% end %>

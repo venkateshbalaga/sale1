@@ -1,0 +1,38 @@
+<table>
+		<tr>
+			<td>
+				Casenumber:
+			</td>
+			<td>
+				<%=h @case.casenumber %>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Status:
+			</td>
+			<td>
+				<%=h @case.status %>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Type:
+			</td>
+			<td>
+				<%=h @case.type1 %>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Case orgin:
+			</td>
+			<td>
+				<%=h @case.case_orgin %>
+			</td>
+		</tr>
+</table>
+
+
+<%= link_to 'Edit', edit_case_path(@case) %> |
+<%= link_to 'Back', cases_path %>

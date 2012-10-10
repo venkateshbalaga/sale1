@@ -1,0 +1,54 @@
+<h1>Editing case</h1>
+
+<% form_for(@case) do |f| %>
+  <%= f.error_messages %>
+
+ 
+		<table align="center">
+				<tr>
+
+					<td>
+						Case Number:
+					</td>
+					<td>
+						<%= f.text_field :casenumber, :id => "casenumber",  :readonly => "true", :style=>"width:155px;" %>	
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Status:
+					</td>
+					<td>
+						<%= f.select :status, [['New'],['Working'],['Escalated']],{:prompt =>true},{ :id => "status", :style=>"width:158px;"} %>
+					</td>
+				</tr>	
+				<tr>
+					<td>
+						Type:
+					</td>
+					<td>
+						<%= f.select :type1, [['Mechanical'],['Electrical'],['Electronic'],['Structural'],['Other']],{:prompt =>true},{ :id => "type", :style=>"width:158px;"} %>
+					</td>
+				</tr>
+				<tr>
+					  <td>
+							Case Origin:
+						</td>
+						<td>
+							<%= f.select :case_orgin, [['-------------None------------'],['Phone'],['Email'],['Web']],{ :prompt=>false},{ :id => "type", :style=>"width:158px;"} %>
+						</td>
+				</tr>
+		</table>
+  
+			<table align="center">
+				<tr>
+					<td>
+						<%= f.submit 'Update' %>
+					</td>
+				</tr>
+			</table>
+ 
+<% end %>
+
+<%= link_to 'Show', @case %> |
+<%= link_to 'Back', cases_path %>
